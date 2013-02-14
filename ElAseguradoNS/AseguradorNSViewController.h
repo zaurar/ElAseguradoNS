@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NewsstandKit/NewsstandKit.h>
 
-@interface AseguradorNSViewController : UIViewController
+@interface AseguradorNSViewController : UITableViewController
+
 
 @end

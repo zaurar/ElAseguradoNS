@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763BC0FD16CC1822005E3C78 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763BC0FC16CC1822005E3C78 /* StoreKit.framework */; };
+		763BC10116CC18B9005E3C78 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 763BC10016CC18B9005E3C78 /* IAPHelper.m */; };
+		763BC10416CC1E04005E3C78 /* AseguradorIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 763BC10316CC1E04005E3C78 /* AseguradorIAPHelper.m */; };
+		763BC10D16CC5427005E3C78 /* DetalleQuincenalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763BC10C16CC5427005E3C78 /* DetalleQuincenalViewController.m */; };
+		763BC10F16CC55EA005E3C78 /* AseguradorNS.json in Resources */ = {isa = PBXBuildFile; fileRef = 763BC10E16CC55EA005E3C78 /* AseguradorNS.json */; };
+		763BC11516CC5C2C005E3C78 /* testPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 763BC11416CC5C2C005E3C78 /* testPDF.pdf */; };
+		763BC11C16CC63AE005E3C78 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763BC11B16CC63AD005E3C78 /* PDFViewController.m */; };
+		763BC11E16CC63CD005E3C78 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763BC11D16CC63CD005E3C78 /* QuickLook.framework */; };
+		763BC12416CC6924005E3C78 /* SeleccionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763BC12316CC6924005E3C78 /* SeleccionViewController.m */; };
 		7698255416C58CDA0064FF16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7698255316C58CDA0064FF16 /* UIKit.framework */; };
 		7698255616C58CDA0064FF16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7698255516C58CDA0064FF16 /* Foundation.framework */; };
 		7698255816C58CDA0064FF16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7698255716C58CDA0064FF16 /* CoreGraphics.framework */; };
@@ -18,9 +27,24 @@
 		7698256A16C58CDB0064FF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7698256916C58CDB0064FF16 /* Default-568h@2x.png */; };
 		7698256D16C58CDB0064FF16 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7698256B16C58CDB0064FF16 /* MainStoryboard.storyboard */; };
 		7698257016C58CDB0064FF16 /* AseguradorNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7698256F16C58CDB0064FF16 /* AseguradorNSViewController.m */; };
+		7698257716C58D660064FF16 /* iconNewsstand.png in Resources */ = {isa = PBXBuildFile; fileRef = 7698257616C58D660064FF16 /* iconNewsstand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763BC0FC16CC1822005E3C78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		763BC0FF16CC18B9005E3C78 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		763BC10016CC18B9005E3C78 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		763BC10216CC1E04005E3C78 /* AseguradorIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AseguradorIAPHelper.h; sourceTree = "<group>"; };
+		763BC10316CC1E04005E3C78 /* AseguradorIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AseguradorIAPHelper.m; sourceTree = "<group>"; };
+		763BC10B16CC5426005E3C78 /* DetalleQuincenalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleQuincenalViewController.h; sourceTree = "<group>"; };
+		763BC10C16CC5427005E3C78 /* DetalleQuincenalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleQuincenalViewController.m; sourceTree = "<group>"; };
+		763BC10E16CC55EA005E3C78 /* AseguradorNS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AseguradorNS.json; sourceTree = "<group>"; };
+		763BC11416CC5C2C005E3C78 /* testPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = testPDF.pdf; sourceTree = "<group>"; };
+		763BC11A16CC63AD005E3C78 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		763BC11B16CC63AD005E3C78 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		763BC11D16CC63CD005E3C78 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		763BC12216CC6924005E3C78 /* SeleccionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeleccionViewController.h; sourceTree = "<group>"; };
+		763BC12316CC6924005E3C78 /* SeleccionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeleccionViewController.m; sourceTree = "<group>"; };
 		7698254F16C58CDA0064FF16 /* ElAseguradoNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElAseguradoNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7698255316C58CDA0064FF16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7698255516C58CDA0064FF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +61,7 @@
 		7698256C16C58CDB0064FF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7698256E16C58CDB0064FF16 /* AseguradorNSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AseguradorNSViewController.h; sourceTree = "<group>"; };
 		7698256F16C58CDB0064FF16 /* AseguradorNSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AseguradorNSViewController.m; sourceTree = "<group>"; };
+		7698257616C58D660064FF16 /* iconNewsstand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconNewsstand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763BC11E16CC63CD005E3C78 /* QuickLook.framework in Frameworks */,
+				763BC0FD16CC1822005E3C78 /* StoreKit.framework in Frameworks */,
 				7698255416C58CDA0064FF16 /* UIKit.framework in Frameworks */,
 				7698255616C58CDA0064FF16 /* Foundation.framework in Frameworks */,
 				7698255816C58CDA0064FF16 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +100,8 @@
 		7698255216C58CDA0064FF16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				763BC11D16CC63CD005E3C78 /* QuickLook.framework */,
+				763BC0FC16CC1822005E3C78 /* StoreKit.framework */,
 				7698255316C58CDA0064FF16 /* UIKit.framework */,
 				7698255516C58CDA0064FF16 /* Foundation.framework */,
 				7698255716C58CDA0064FF16 /* CoreGraphics.framework */,
@@ -83,11 +112,21 @@
 		7698255916C58CDA0064FF16 /* ElAseguradoNS */ = {
 			isa = PBXGroup;
 			children = (
+				763BC10216CC1E04005E3C78 /* AseguradorIAPHelper.h */,
+				763BC10316CC1E04005E3C78 /* AseguradorIAPHelper.m */,
 				7698256216C58CDB0064FF16 /* AseguradorNSAppDelegate.h */,
 				7698256316C58CDB0064FF16 /* AseguradorNSAppDelegate.m */,
-				7698256B16C58CDB0064FF16 /* MainStoryboard.storyboard */,
 				7698256E16C58CDB0064FF16 /* AseguradorNSViewController.h */,
 				7698256F16C58CDB0064FF16 /* AseguradorNSViewController.m */,
+				763BC10B16CC5426005E3C78 /* DetalleQuincenalViewController.h */,
+				763BC10C16CC5427005E3C78 /* DetalleQuincenalViewController.m */,
+				763BC0FF16CC18B9005E3C78 /* IAPHelper.h */,
+				763BC10016CC18B9005E3C78 /* IAPHelper.m */,
+				7698256B16C58CDB0064FF16 /* MainStoryboard.storyboard */,
+				763BC12216CC6924005E3C78 /* SeleccionViewController.h */,
+				763BC12316CC6924005E3C78 /* SeleccionViewController.m */,
+				763BC11A16CC63AD005E3C78 /* PDFViewController.h */,
+				763BC11B16CC63AD005E3C78 /* PDFViewController.m */,
 				7698255A16C58CDA0064FF16 /* Supporting Files */,
 			);
 			path = ElAseguradoNS;
@@ -96,13 +135,16 @@
 		7698255A16C58CDA0064FF16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				763BC11416CC5C2C005E3C78 /* testPDF.pdf */,
 				7698255B16C58CDA0064FF16 /* ElAseguradoNS-Info.plist */,
 				7698255C16C58CDA0064FF16 /* InfoPlist.strings */,
 				7698255F16C58CDA0064FF16 /* main.m */,
 				7698256116C58CDB0064FF16 /* ElAseguradoNS-Prefix.pch */,
+				7698257616C58D660064FF16 /* iconNewsstand.png */,
 				7698256516C58CDB0064FF16 /* Default.png */,
 				7698256716C58CDB0064FF16 /* Default@2x.png */,
 				7698256916C58CDB0064FF16 /* Default-568h@2x.png */,
+				763BC10E16CC55EA005E3C78 /* AseguradorNS.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,6 +206,9 @@
 				7698256816C58CDB0064FF16 /* Default@2x.png in Resources */,
 				7698256A16C58CDB0064FF16 /* Default-568h@2x.png in Resources */,
 				7698256D16C58CDB0064FF16 /* MainStoryboard.storyboard in Resources */,
+				7698257716C58D660064FF16 /* iconNewsstand.png in Resources */,
+				763BC10F16CC55EA005E3C78 /* AseguradorNS.json in Resources */,
+				763BC11516CC5C2C005E3C78 /* testPDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +222,11 @@
 				7698256016C58CDA0064FF16 /* main.m in Sources */,
 				7698256416C58CDB0064FF16 /* AseguradorNSAppDelegate.m in Sources */,
 				7698257016C58CDB0064FF16 /* AseguradorNSViewController.m in Sources */,
+				763BC10116CC18B9005E3C78 /* IAPHelper.m in Sources */,
+				763BC10416CC1E04005E3C78 /* AseguradorIAPHelper.m in Sources */,
+				763BC10D16CC5427005E3C78 /* DetalleQuincenalViewController.m in Sources */,
+				763BC11C16CC63AE005E3C78 /* PDFViewController.m in Sources */,
+				763BC12416CC6924005E3C78 /* SeleccionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +342,7 @@
 				7698257516C58CDB0064FF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

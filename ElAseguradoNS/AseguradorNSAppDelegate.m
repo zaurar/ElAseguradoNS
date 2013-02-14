@@ -7,12 +7,14 @@
 //
 
 #import "AseguradorNSAppDelegate.h"
+#import "AseguradorIAPHelper.h"
 
 @implementation AseguradorNSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [AseguradorIAPHelper sharedInstance];
     return YES;
 }
 							
