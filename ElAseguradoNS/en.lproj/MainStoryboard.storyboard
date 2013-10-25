@@ -1,105 +1,874 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Zrq-qU-H2A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="E4c-cF-XLE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <deployment version="1552" defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--AseguradorNS View Controller - Revistas-->
+        <!--Main View Controller - Última Ed. SEP, 2013-->
+        <scene sceneID="fP8-Ag-hbu">
+            <objects>
+                <viewController id="PPo-p4-fuN" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Za-7N-PyU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="sek-Wd-cJJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Welcome-Title.png" id="O5H-gF-iWC">
+                                <rect key="frame" x="0.0" y="59" width="320" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yby-Ki-ItX">
+                                <rect key="frame" x="83" y="261" width="155" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Welcome-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Welcome-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cCB-oE-e29" kind="push" id="J8u-55-2Ic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1B1-5U-9n7">
+                                <rect key="frame" x="83" y="319" width="155" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-NewNews-Button-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-NewNews-Button-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3wy-oU-QT1" kind="push" id="ezL-uS-TEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rpg-dS-SY6">
+                                <rect key="frame" x="83" y="387" width="155" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Welcome-Menu-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Welcome-Menu-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6hT-Vn-BUb" kind="push" id="qlL-RZ-yJG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Última Ed. SEP, 2013" id="8sP-NC-v9Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-s2-I57" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="37"/>
+        </scene>
+        <!--Web View Controller - Nueva Nota-->
+        <scene sceneID="Fcx-KO-Hyv">
+            <objects>
+                <viewController id="3wy-oU-QT1" customClass="webViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1W-NY-My5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="w8y-wP-NsC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-NewNews.png" id="EJM-w1-44k">
+                                <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" id="MQS-GR-Uqg">
+                                <rect key="frame" x="20" y="67" width="280" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nueva Nota" id="qUQ-ad-7pl"/>
+                    <connections>
+                        <outlet property="webView" destination="MQS-GR-Uqg" id="5yE-h2-lBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLu-6P-y2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="673"/>
+        </scene>
+        <!--Enlace View Controller - Enlace-->
+        <scene sceneID="x6q-8Y-qQz">
+            <objects>
+                <viewController id="TeN-Ra-S8l" customClass="EnlaceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rKu-Ss-39j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="nTN-6e-bc8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bIj-RT-NPL">
+                                <rect key="frame" x="0.0" y="63" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-Web-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-Web-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLWeb" destination="TeN-Ra-S8l" eventType="touchUpInside" id="2WK-6w-gRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DeZ-WF-Rlr">
+                                <rect key="frame" x="-1" y="112" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-Mail-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-Mail-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMail" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Mce-SA-2rh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YVS-n5-AKq">
+                                <rect key="frame" x="-1" y="162" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-Twitter-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-Twitter-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLTwitter" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Nwk-eV-Dgn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="swg-Zf-yJc">
+                                <rect key="frame" x="-1" y="212" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-Face-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-Face-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLFB" destination="TeN-Ra-S8l" eventType="touchUpInside" id="obK-qV-W5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="veQ-Be-IBK">
+                                <rect key="frame" x="-1" y="262" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-Tels-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-Tels-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCall" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Qzd-Ci-hNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GLR-EY-wFM">
+                                <rect key="frame" x="80" y="332" width="160" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Enlace-AMSF-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Enlace-AMSF-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OpenAMSF" destination="TeN-Ra-S8l" eventType="touchUpInside" id="7F5-XR-noK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Enlace-Text.png" id="G2v-Ch-HFg">
+                                <rect key="frame" x="-1" y="307" width="320" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Enlace" image="iPhone-BottomBar-2(S).png" id="euU-rr-2Dx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXd-7q-uyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="-607"/>
+        </scene>
+        <!--Desarrollo View Controller - Desarrollo-->
+        <scene sceneID="aNw-we-ufG">
+            <objects>
+                <viewController id="0f7-A7-WPB" customClass="DesarrolloViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xlq-9W-p2M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="FVl-Uz-jZj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Dev-Text.png" id="V4g-dL-KI2">
+                                <rect key="frame" x="0.0" y="59" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Dev-Logo.png" id="f3P-2d-glO">
+                                <rect key="frame" x="0.0" y="159" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FLN-at-UOQ">
+                                <rect key="frame" x="0.0" y="220" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Dev-Web-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Dev-Web-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLWeb" destination="0f7-A7-WPB" eventType="touchUpInside" id="MIg-VN-b4H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5ZT-fG-Uos">
+                                <rect key="frame" x="0.0" y="270" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Dev-Mail-Bug-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Dev-Mail-Bug-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMailBug" destination="0f7-A7-WPB" eventType="touchUpInside" id="MA1-oM-kTZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ifa-7m-xcQ">
+                                <rect key="frame" x="0.0" y="320" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Dev-Mail-Dev-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Dev-Mail-Dev-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMailContacto" destination="0f7-A7-WPB" eventType="touchUpInside" id="Xki-rb-KpG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lzC-HY-joW">
+                                <rect key="frame" x="0.0" y="370" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Dev-Tel-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Dev-Tel-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCall" destination="0f7-A7-WPB" eventType="touchUpInside" id="fzG-IH-aYW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Desarrollo" image="iPhone-BottomBar-3(S).png" id="9mG-dA-Dyj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gn6-gj-aj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="-607"/>
+        </scene>
+        <!--Settings View Controller - Información-->
+        <scene sceneID="6Dw-hH-oFo">
+            <objects>
+                <viewController id="GSA-0e-HPf" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cDa-T9-CK3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="on1-MC-2xa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Info-Tut-Text.png" id="f0b-1Y-ZNt">
+                                <rect key="frame" x="0.0" y="61" width="320" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Info-Tut-Back.png" id="b83-dJ-bHE">
+                                <rect key="frame" x="0.0" y="85" width="320" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Tut-01.jpg" id="8Cu-nd-6qo">
+                                <rect key="frame" x="60" y="106" width="200" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Info-Skins-Back.png" id="gpT-oj-kEP">
+                                <rect key="frame" x="160" y="379" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3vw-cD-q5j">
+                                <rect key="frame" x="0.0" y="379" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Info-Restore-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Info-Restore-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreTapped" destination="GSA-0e-HPf" eventType="touchUpInside" id="1Ts-0Z-bux"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rJi-EX-cQk">
+                                <rect key="frame" x="171" y="390" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="iPhone-Info-Skins-1-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="iPhone-Info-Skins-1-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo1" destination="GSA-0e-HPf" eventType="touchUpInside" id="8FL-qB-bLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CUs-lo-Jfu">
+                                <rect key="frame" x="217" y="390" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Info-Skins-2-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Info-Skins-2-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo2" destination="GSA-0e-HPf" eventType="touchUpInside" id="M2Y-I9-h55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JFh-RX-AY2">
+                                <rect key="frame" x="264" y="390" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Info-Skins-3-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Info-Skins-3-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo3" destination="GSA-0e-HPf" eventType="touchUpInside" id="kwZ-Ik-gq1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="anx-Wo-Sgt">
+                                <rect key="frame" x="10" y="145" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Info-Tut-Arrow-Left-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Info-Tut-Arrow-Left-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutIzquierdo" destination="GSA-0e-HPf" eventType="touchUpInside" id="G4p-ub-Svn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fZS-ns-yzl">
+                                <rect key="frame" x="280" y="145" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Info-Tut-Arrow-Right-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Info-Tut-Arrow-Right-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutDerecho" destination="GSA-0e-HPf" eventType="touchUpInside" id="MZ9-Ik-M1c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Información" image="iPhone-BottomBar-1(S).png" id="6ce-ZC-nsV"/>
+                    <connections>
+                        <outlet property="tut" destination="8Cu-nd-6qo" id="UuV-6w-2Qr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUM-nh-mOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="-1212"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WtM-Ut-SJD">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="6hT-Vn-BUb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OMt-rf-AgR"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Big-7g-waU">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GSA-0e-HPf" kind="relationship" relationship="viewControllers" id="Kmj-Bo-7L3"/>
+                        <segue destination="TeN-Ra-S8l" kind="relationship" relationship="viewControllers" id="YKe-kK-HE6"/>
+                        <segue destination="0f7-A7-WPB" kind="relationship" relationship="viewControllers" id="vxf-7k-Xjs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyF-kX-K5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="-649"/>
+        </scene>
+        <!--AseguradorNS View Controller - Hemeroteca-->
         <scene sceneID="tiH-nx-Tu2">
             <objects>
                 <tableViewController id="cCB-oE-e29" customClass="AseguradorNSViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="vtZ-o3-Abr">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="3001" contentMode="top" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="168" sectionHeaderHeight="22" sectionFooterHeight="22" id="vtZ-o3-Abr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="105" id="8Ra-4q-ehg">
-                                <rect key="frame" x="0.0" y="22" width="320" height="105"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="104"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iconNewsstand.png" id="pkD-nU-lQe">
-                                            <rect key="frame" x="20" y="4" width="65" height="95"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2002" contentMode="left" text="Título" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="diJ-8K-3KP">
-                                            <rect key="frame" x="98" y="34" width="202" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="XXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TGq-zW-cAZ">
-                                            <rect key="frame" x="98" y="63" width="35" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.44427614795918369" green="0.44427614795918369" blue="0.44427614795918369" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DOX-1T-ZRJ">
-                                            <rect key="frame" x="141" y="59" width="117" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                            <state key="normal" title="IAP">
-                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <state key="highlighted">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <connections>
-                                    <segue destination="Kiv-Ll-aWR" kind="push" id="ksS-et-FLF"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="c1Z-1C-ORA">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="168" id="8Ra-4q-ehg" userLabel="Enero">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ra-4q-ehg" id="9QQ-Ub-03P">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10001" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="oHD-uP-lKF" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-ENE13.png" id="pkD-nU-lQe" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="XJY-hp-grE" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="BRN-33-0xV" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="1q2-0e-lxe" userLabel="Febrero">
+                                        <rect key="frame" x="0.0" y="232" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1q2-0e-lxe" id="yes-Hi-Hb5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="Lbn-sN-hM0" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-FEB13.png" id="tLw-Sa-Nwm" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="WsH-uf-yOJ" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="isS-Vn-6by" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="b2o-pp-FUw" userLabel="Marzo">
+                                        <rect key="frame" x="0.0" y="400" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b2o-pp-FUw" id="q4M-MU-Hdl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="RHT-ih-KWl" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-MAR13.png" id="c3R-uA-t8H" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="7tQ-MS-XhJ" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="Zzg-2p-sj4" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="2df-aG-SU8" userLabel="Abril">
+                                        <rect key="frame" x="0.0" y="568" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2df-aG-SU8" id="Ejw-AZ-9fw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="rur-lg-wJQ" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-ABR13.png" id="np4-MS-mbD" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="0fB-Cg-xjO" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="Fi0-b3-koF" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="cES-VY-txY" userLabel="Mayo">
+                                        <rect key="frame" x="0.0" y="736" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cES-VY-txY" id="DLM-Xs-y3N">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="1ij-J2-q9H" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-MAY13.png" id="AmR-hn-txG" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="zcI-1f-Ndm" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="8bR-Pl-nTa" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="8Hm-x7-Mte" userLabel="Junio">
+                                        <rect key="frame" x="0.0" y="904" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Hm-x7-Mte" id="pHC-Hd-cxS">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="Anq-gf-i46" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-JUN13.png" id="e7J-JX-hpq" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="PoY-mj-ctJ" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="jQU-gk-qxx" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="77" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="RAr-Ny-PWk" userLabel="Julio">
+                                        <rect key="frame" x="0.0" y="1072" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RAr-Ny-PWk" id="inp-5N-krl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="Hof-6v-YpU" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-JUL13.png" id="nbD-Zh-JqA" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="5" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="0bK-Zd-vzJ" userLabel="comprado left">
+                                                    <rect key="frame" x="123" y="82" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="GXn-uY-O70" userLabel="comprado right">
+                                                    <rect key="frame" x="221" y="82" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="yZc-Ew-FGU" userLabel="Agosto">
+                                        <rect key="frame" x="0.0" y="1240" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yZc-Ew-FGU" id="8rN-gC-MTl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="fvU-WK-dnO" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-AGO13.png" id="zBR-Kj-TWb" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="OnP-FP-iFH" userLabel="comprado right">
+                                                    <rect key="frame" x="227" y="78" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="yZR-dz-efs" userLabel="comprado left">
+                                                    <rect key="frame" x="126" y="78" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="vcP-3q-HZB" userLabel="Septiembre">
+                                        <rect key="frame" x="0.0" y="1408" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcP-3q-HZB" id="Hag-Iy-b9i">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="vz9-zD-L8x" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" image="iPhone-Shelf-SEP13.png" id="adk-V4-PAg" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="20" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="2C6-ej-eFt" userLabel="comprado right">
+                                                    <rect key="frame" x="229" y="97" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Shelf-TickOn.png" id="ZPa-gZ-C8b" userLabel="comprado left">
+                                                    <rect key="frame" x="124" y="97" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="tHl-rh-b3T" userLabel="Octubre">
+                                        <rect key="frame" x="0.0" y="1576" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tHl-rh-b3T" id="gOI-H2-OKi">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="tw7-qd-Yun" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" image="iPhone-Shelf-Ad-AMSF.png" id="oTg-JM-MeL" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="10" y="20" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="rBC-QJ-3G1" userLabel="Noviembre">
+                                        <rect key="frame" x="0.0" y="1744" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBC-QJ-3G1" id="e1l-RC-KOW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="ahn-Oc-RZc" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" id="Diy-2Y-WN1" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" image="iPhone-Shelf-Ad-Audatex.png" id="MTL-KW-FwX" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="10" y="16" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="168" id="EYu-Yx-By1" userLabel="Diciembre">
+                                        <rect key="frame" x="0.0" y="1912" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EYu-Yx-By1" id="3Nz-EX-56Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" image="Common-Cloth-Back.png" id="Z7s-4q-Dld" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" id="HHq-I0-kx6" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" image="iPhone-Shelf-Ad-LoJack.png" id="Kta-Gi-Rxg" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="10" y="10" width="320" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="cCB-oE-e29" id="Vxx-sp-w4P"/>
                             <outlet property="delegate" destination="cCB-oE-e29" id="tuR-Ne-W2Q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Revistas" id="ObF-ij-qys"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationItem key="navigationItem" title="Hemeroteca" id="ObF-ij-qys"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="abrilCompradoLeft" destination="0fB-Cg-xjO" id="d9X-2E-ge8"/>
+                        <outlet property="abrilCompradoRight" destination="Fi0-b3-koF" id="RFx-4k-3Sf"/>
+                        <outlet property="fondoCelda1" destination="oHD-uP-lKF" id="ytE-4h-n6b"/>
+                        <outlet property="fondoCelda10" destination="tw7-qd-Yun" id="7Kh-oA-Z1a"/>
+                        <outlet property="fondoCelda11" destination="ahn-Oc-RZc" id="qNV-gH-SW2"/>
+                        <outlet property="fondoCelda12" destination="Z7s-4q-Dld" id="KiX-h6-AMX"/>
+                        <outlet property="fondoCelda2" destination="Lbn-sN-hM0" id="Ntg-UD-Hfi"/>
+                        <outlet property="fondoCelda3" destination="RHT-ih-KWl" id="RBD-Me-jTG"/>
+                        <outlet property="fondoCelda4" destination="rur-lg-wJQ" id="Tg6-gs-ccw"/>
+                        <outlet property="fondoCelda5" destination="1ij-J2-q9H" id="bhm-iY-lgh"/>
+                        <outlet property="fondoCelda6" destination="Anq-gf-i46" id="bjV-n8-u42"/>
+                        <outlet property="fondoCelda7" destination="Hof-6v-YpU" id="Ncd-xv-NCH"/>
+                        <outlet property="fondoCelda8" destination="fvU-WK-dnO" id="6MG-Qv-fZ1"/>
+                        <outlet property="fondoCelda9" destination="vz9-zD-L8x" id="7TX-P5-U2v"/>
+                        <outlet property="marzoCompradoLeft" destination="7tQ-MS-XhJ" id="aYK-HH-8HE"/>
+                        <outlet property="marzoCompradoRight" destination="Zzg-2p-sj4" id="AMs-Cl-wuF"/>
+                        <outlet property="mayoCompradoLeft" destination="zcI-1f-Ndm" id="uXR-0u-JqA"/>
+                        <outlet property="mayoCompradoRight" destination="8bR-Pl-nTa" id="LEA-PY-a9E"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rt7-Ae-XvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZQ6-c4-Vml" userLabel="button para segue">
+                    <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <segue destination="Kiv-Ll-aWR" kind="push" identifier="seguePreview" id="0Qu-N5-C1j"/>
+                    </connections>
+                </button>
             </objects>
-            <point key="canvasLocation" x="822" y="37"/>
+            <point key="canvasLocation" x="1388" y="37"/>
         </scene>
-        <!--Detalle Quincenal View Controller - Artículos por quincena-->
+        <!--Detalle Quincenal View Controller - SEP, Qna. 1-->
         <scene sceneID="nze-Z2-fr1">
             <objects>
                 <viewController id="Kiv-Ll-aWR" customClass="DetalleQuincenalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iiO-VZ-UAM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iconNewsstand.png" id="hSK-Pm-ap8">
-                                <rect key="frame" x="20" y="12" width="130" height="190"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IKH-fo-rOD" userLabel="Segue Button">
+                                <rect key="frame" x="48" y="84" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wZv-FO-Bwa" kind="push" identifier="segueDetalleNoticias" id="K35-Un-089"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="BFn-8l-L21">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="668"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iconNewsstand.png" id="3S4-4t-Qpe">
-                                <rect key="frame" x="170" y="12" width="130" height="190"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Preview-Paper-Back.png" id="Qsz-hH-NJK" userLabel="fondo PaperBack">
+                                <rect key="frame" x="0.0" y="111" width="320" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iconNewsstand.png" id="Bxa-hQ-ud3">
-                                <rect key="frame" x="20" y="211" width="130" height="190"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Preview-Cover-ENE1.jpg" id="rtX-eP-e1o" userLabel="ImageView - Banner">
+                                <rect key="frame" x="38" y="119" width="245" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iconNewsstand.png" id="0t6-eo-FVh">
-                                <rect key="frame" x="170" y="211" width="130" height="190"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vbq-fa-ZJ2">
-                                <rect key="frame" x="20" y="160" width="42" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hN4-uE-lj0">
+                                <rect key="frame" x="0.0" y="425" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="P">
+                                <state key="normal" backgroundImage="iPhone-Preview-Destacadas-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Destacadas-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RxS-h6-gqM" kind="push" id="aYv-8T-jZ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zs7-76-3AH" userLabel="Anuncio Izquierdo">
+                                <rect key="frame" x="20" y="111" width="144" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -107,201 +876,449 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Njx-BT-SuD" kind="push" id="i26-4z-DXK"/>
+                                    <action selector="anuncioIzq" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="Qic-0W-8DH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nH9-9v-8Pu">
-                                <rect key="frame" x="89" y="160" width="61" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iUx-t5-b2N" userLabel="Anuncio Derecho">
+                                <rect key="frame" x="161" y="111" width="144" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="IAP">
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="anuncioDer" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="VuQ-a2-GkL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u9x-Ej-Bj6">
-                                <rect key="frame" x="170" y="159" width="42" height="44"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3V1-Zd-A0O" userLabel="Entrar Q1">
+                                <rect key="frame" x="6" y="60" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="P">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1-Entrar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1-Entrar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="segueEntrarQ1" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="yQM-Dk-uBp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bXD-V0-QuE">
-                                <rect key="frame" x="239" y="159" width="61" height="44"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="INt-iW-c1z" userLabel="Entrar Q2">
+                                <rect key="frame" x="212" y="60" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="IAP">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q2-Entrar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q2-Entrar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="segueEntrarQ2" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="Ip8-fY-0mp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lLk-BG-XH6">
-                                <rect key="frame" x="170" y="358" width="42" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="unv-b7-Vgn" userLabel="Comprar Ambas">
+                                <rect key="frame" x="212" y="60" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="P">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1&amp;2-Comprar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1&amp;2-Comprar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buyButtonCombo" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="6na-pC-bid"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dH7-mF-jhP">
-                                <rect key="frame" x="239" y="358" width="61" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bCM-D2-dYa" userLabel="Comprar Q1">
+                                <rect key="frame" x="6" y="60" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="IAP">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1-Comprar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1-Comprar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buyButtonQ1" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="IVo-ax-lnj"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eqD-3C-E0p">
-                                <rect key="frame" x="20" y="358" width="42" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dxR-NT-Thi" userLabel="Comprar Q2">
+                                <rect key="frame" x="109" y="60" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="P">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q2-Comprar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q2-Comprar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SZI-rX-j2C">
-                                <rect key="frame" x="89" y="358" width="61" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="IAP">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ2" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="YmE-sS-e9m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Artículos por quincena" id="QSe-WU-Ogs"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationItem key="navigationItem" title="SEP, Qna. 1" id="QSe-WU-Ogs">
+                        <barButtonItem key="rightBarButtonItem" title="↔ Quincena" id="poH-aQ-k9x">
+                            <connections>
+                                <action selector="changeCuarto" destination="Kiv-Ll-aWR" id="Bn4-ky-NAn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comprarAmbas" destination="unv-b7-Vgn" id="2uL-TO-IGp"/>
+                        <outlet property="comprarQ1" destination="bCM-D2-dYa" id="ovi-Ju-Psh"/>
+                        <outlet property="comprarQ2" destination="dxR-NT-Thi" id="8uT-7k-fIH"/>
+                        <outlet property="entrarQ1" destination="3V1-Zd-A0O" id="Fs7-CY-sc6"/>
+                        <outlet property="entrarQ2" destination="INt-iW-c1z" id="pqZ-of-avK"/>
+                        <outlet property="preface" destination="rtX-eP-e1o" id="4qe-s5-5H2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlT-oT-LZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307" y="37"/>
+            <point key="canvasLocation" x="1800" y="37"/>
         </scene>
-        <!--Seleccion View Controller - ¿Cómo lo quieres leer?-->
-        <scene sceneID="Gf6-18-LBO">
+        <!--Destacados View Controller - Destacadas-->
+        <scene sceneID="nde-Mi-ih8">
             <objects>
-                <viewController id="Njx-BT-SuD" customClass="SeleccionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BBs-3V-2ZT">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                <viewController id="RxS-h6-gqM" customClass="DestacadosViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJy-H2-5XI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bmg-ft-Cpn">
-                                <rect key="frame" x="38" y="41" width="244" height="151"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="evI-jH-ako" userLabel="Segue Button">
+                                <rect key="frame" x="100" y="112" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wZv-FO-Bwa" kind="push" identifier="segueDestacadasNoticias" id="RSH-b9-zJA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="bWP-rh-KaW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Preview-Paper-Back.png" id="c7d-DG-9GN" userLabel="ImageView - Banner">
+                                <rect key="frame" x="0.0" y="112" width="320" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="1ag-ns-gbg">
+                                <rect key="frame" x="31" y="123" width="259" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lista de noticias destacadas, sólo texto
+
+
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zx5-RO-shp" userLabel="Entrar Q1">
+                                <rect key="frame" x="11" y="61" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="PDF">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1-Entrar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1-Entrar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WY3-Nj-REb" kind="push" id="HqX-W0-Cf5"/>
+                                    <action selector="segueEntrarQ1" destination="RxS-h6-gqM" eventType="touchUpInside" id="7LG-Lf-4Oe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="53k-cC-xaR">
-                                <rect key="frame" x="38" y="232" width="244" height="151"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qYY-Np-spL" userLabel="Entrar Q2">
+                                <rect key="frame" x="212" y="61" width="103" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Lector Especial">
+                                <state key="normal" backgroundImage="iPhone-Preview-Q2-Entrar-Idle.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q2-Entrar-State.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="segueEntrarQ2" destination="RxS-h6-gqM" eventType="touchUpInside" id="2Wl-pK-eEK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8iI-ec-xnN" userLabel="Comprar Q2">
+                                <rect key="frame" x="111" y="61" width="103" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Preview-Q2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ2" destination="RxS-h6-gqM" eventType="touchUpInside" id="WfQ-Sq-Syz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z72-Ol-Up0" userLabel="Comprar Ambas">
+                                <rect key="frame" x="212" y="61" width="103" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1&amp;2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1&amp;2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonCombo" destination="RxS-h6-gqM" eventType="touchUpInside" id="h2H-DW-5mJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Se-JV-yuT" userLabel="Comprar Q1">
+                                <rect key="frame" x="11" y="61" width="103" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPhone-Preview-Q1-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPhone-Preview-Q1-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ1" destination="RxS-h6-gqM" eventType="touchUpInside" id="q7i-GV-QyF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="¿Cómo lo quieres leer?" id="UBR-PL-Eyp"/>
+                    <navigationItem key="navigationItem" title="Destacadas" id="15I-dI-RmQ">
+                        <barButtonItem key="rightBarButtonItem" title="↔ Quincena" id="Yhl-lQ-vG8">
+                            <connections>
+                                <action selector="changeCuarto" destination="RxS-h6-gqM" id="lYa-1I-10o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comprarAmbas" destination="z72-Ol-Up0" id="jME-Kj-zoW"/>
+                        <outlet property="comprarQ1" destination="2Se-JV-yuT" id="Lbs-oC-Wh7"/>
+                        <outlet property="comprarQ2" destination="8iI-ec-xnN" id="hp6-Ts-5vT"/>
+                        <outlet property="destacados" destination="1ag-ns-gbg" id="u0j-mT-1VY"/>
+                        <outlet property="entrarQ1" destination="Zx5-RO-shp" id="QIS-tZ-PNi"/>
+                        <outlet property="entrarQ2" destination="qYY-Np-spL" id="nrd-so-0Xq"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eOg-pj-YlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6be-BB-mrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="37"/>
+            <point key="canvasLocation" x="2218" y="37"/>
         </scene>
-        <!--View Controller - PDF-->
-        <scene sceneID="Hz3-LX-m22">
+        <!--Noticia Reader View Controller-->
+        <scene sceneID="T4c-KC-3hg">
             <objects>
-                <viewController id="WY3-Nj-REb" customClass="PDFViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Twq-dh-ZXh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                <viewController id="Nke-AR-qhq" customClass="NoticiaReaderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jey-Og-oms">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" image="Common-Cloth-Back(1,1).png" id="u6G-mi-zPH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhone-Reader-Paper-Back.png" id="MDn-CV-X3x">
+                                <rect key="frame" x="0.0" y="56" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="D8U-wO-1z8">
+                                <rect key="frame" x="21" y="71" width="280" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="PDF" id="aO4-FZ-Pgi"/>
+                    <navigationItem key="navigationItem" id="XKs-25-9ya"/>
+                    <connections>
+                        <outlet property="readerBody" destination="D8U-wO-1z8" id="NDg-Uh-sCe"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ieh-IE-XpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="II8-CB-GM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2204" y="37"/>
+            <point key="canvasLocation" x="3089" y="37"/>
+        </scene>
+        <!--Seleccion View Controller - Noticias-->
+        <scene sceneID="sfk-Zz-2P6">
+            <objects>
+                <tableViewController id="wZv-FO-Bwa" customClass="SeleccionViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DJ8-Vu-R7D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="DZZ-Af-MmT" style="IBUITableViewCellStyleDefault" id="ldY-Zu-jgF">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldY-Zu-jgF" id="bjq-GV-JeS">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZZ-Af-MmT">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wZv-FO-Bwa" id="LVa-iB-dHB"/>
+                            <outlet property="delegate" destination="wZv-FO-Bwa" id="Tjy-Mm-m6l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Noticias" id="RYq-DG-mrW">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" id="7TP-m0-63i">
+                            <connections>
+                                <segue destination="Nke-AR-qhq" kind="push" identifier="segueReader" id="En5-d5-w5Z"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Versión Editorial" id="9cg-a6-9GA">
+                            <connections>
+                                <action selector="botonPDF" destination="wZv-FO-Bwa" id="3Rc-e4-P6U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT7-E4-DbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="37"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5Gy-Tn-xnW">
+        <scene sceneID="lad-By-YHE">
             <objects>
-                <navigationController id="Zrq-qU-H2A" sceneMemberID="viewController">
+                <navigationController id="E4c-cF-XLE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="ZrM-S1-QJe">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="BgG-r5-xYv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cCB-oE-e29" kind="relationship" relationship="rootViewController" id="qh1-JZ-zco"/>
+                        <segue destination="PPo-p4-fuN" kind="relationship" relationship="rootViewController" id="ctd-Md-2bf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FKy-a4-Hrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkz-Gd-i70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="37"/>
+            <point key="canvasLocation" x="508" y="37"/>
         </scene>
     </scenes>
     <resources>
-        <image name="iconNewsstand.png" width="130" height="190"/>
+        <image name="Common-Cloth-Back(1,1).png" width="640" height="1008"/>
+        <image name="Common-Cloth-Back.png" width="640" height="336"/>
+        <image name="Shelf-TickOn.png" width="46" height="46"/>
+        <image name="Tut-01.jpg" width="820" height="1035"/>
+        <image name="iPhone-BottomBar-1(S).png" width="30" height="30"/>
+        <image name="iPhone-BottomBar-2(S).png" width="30" height="30"/>
+        <image name="iPhone-BottomBar-3(S).png" width="30" height="30"/>
+        <image name="iPhone-Dev-Logo.png" width="640" height="122"/>
+        <image name="iPhone-Dev-Mail-Bug-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Mail-Bug-State.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Mail-Dev-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Mail-Dev-State.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Tel-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Tel-State.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Text.png" width="640" height="200"/>
+        <image name="iPhone-Dev-Web-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Dev-Web-State.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-AMSF-Idle.png" width="320" height="170"/>
+        <image name="iPhone-Enlace-AMSF-State.png" width="320" height="170"/>
+        <image name="iPhone-Enlace-Face-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Face-State.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Mail-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Mail-State.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Tels-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Tels-State.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Text.png" width="640" height="48"/>
+        <image name="iPhone-Enlace-Twitter-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Twitter-State.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Web-Idle.png" width="640" height="100"/>
+        <image name="iPhone-Enlace-Web-State.png" width="640" height="100"/>
+        <image name="iPhone-Info-Restore-Idle.png" width="320" height="100"/>
+        <image name="iPhone-Info-Restore-State.png" width="320" height="100"/>
+        <image name="iPhone-Info-Skins-1-Idle.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-1-State.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-2-Idle.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-2-State.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-3-Idle.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-3-State.png" width="80" height="56"/>
+        <image name="iPhone-Info-Skins-Back.png" width="320" height="100"/>
+        <image name="iPhone-Info-Tut-Arrow-Left-Idle.png" width="60" height="80"/>
+        <image name="iPhone-Info-Tut-Arrow-Left-State.png" width="60" height="80"/>
+        <image name="iPhone-Info-Tut-Arrow-Right-Idle.png" width="60" height="80"/>
+        <image name="iPhone-Info-Tut-Arrow-Right-State.png" width="60" height="80"/>
+        <image name="iPhone-Info-Tut-Back.png" width="640" height="582"/>
+        <image name="iPhone-Info-Tut-Text.png" width="640" height="50"/>
+        <image name="iPhone-NewNews-Button-Idle.png" width="320" height="110"/>
+        <image name="iPhone-NewNews-Button-State.png" width="320" height="110"/>
+        <image name="iPhone-NewNews.png" width="640" height="1008"/>
+        <image name="iPhone-Preview-Cover-ENE1.jpg" width="490" height="645"/>
+        <image name="iPhone-Preview-Destacadas-Idle.png" width="640" height="70"/>
+        <image name="iPhone-Preview-Destacadas-State.png" width="640" height="70"/>
+        <image name="iPhone-Preview-Paper-Back.png" width="640" height="682"/>
+        <image name="iPhone-Preview-Q1&amp;2-Comprar-Idle.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q1&amp;2-Comprar-State.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q1-Comprar-Idle.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q1-Comprar-State.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q1-Entrar-Idle.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q1-Entrar-State.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q2-Comprar-Idle.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q2-Comprar-State.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q2-Entrar-Idle.png" width="206" height="120"/>
+        <image name="iPhone-Preview-Q2-Entrar-State.png" width="206" height="120"/>
+        <image name="iPhone-Reader-Paper-Back.png" width="640" height="832"/>
+        <image name="iPhone-Shelf-ABR13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-AGO13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-Ad-AMSF.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-Ad-Audatex.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-Ad-LoJack.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-ENE13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-FEB13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-JUL13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-JUN13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-MAR13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-MAY13.png" width="640" height="336"/>
+        <image name="iPhone-Shelf-SEP13.png" width="640" height="336"/>
+        <image name="iPhone-Welcome-Entrar-Idle.png" width="320" height="110"/>
+        <image name="iPhone-Welcome-Entrar-State.png" width="320" height="110"/>
+        <image name="iPhone-Welcome-Menu-Idle.png" width="320" height="110"/>
+        <image name="iPhone-Welcome-Menu-State.png" width="320" height="110"/>
+        <image name="iPhone-Welcome-Title.png" width="640" height="468"/>
     </resources>
-    <classes>
-        <class className="AseguradorNSViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AseguradorNSViewController.h"/>
-        </class>
-        <class className="DetalleQuincenalViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetalleQuincenalViewController.h"/>
-        </class>
-        <class className="PDFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="K35-Un-089"/>
+    </inferredMetricsTieBreakers>
 </document>

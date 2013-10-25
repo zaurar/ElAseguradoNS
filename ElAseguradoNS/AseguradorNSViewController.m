@@ -7,20 +7,10 @@
 //
 
 #import "AseguradorNSViewController.h"
-#import "AseguradorIAPHelper.h"
-#import <StoreKit/StoreKit.h>
 
-@interface AseguradorNSViewController (){
-    NSString* titulo;
-    NSString* portada;
-    NSString* fecha;
-    NSString* contenido;
-    NSArray* arrayIssues;
-    NSDictionary* oneIssue;
-    
-    NSArray *_products;
-    NSNumberFormatter * _priceFormatter;
-}
+
+@interface AseguradorNSViewController ()
+
 
 @end
 
@@ -31,72 +21,202 @@
 {
     [super viewDidLoad];
     
-    NSError *err;
-    NSString* dataPath = [[NSBundle mainBundle] pathForResource:@"AseguradorNS" ofType:@"json"];
-    arrayIssues = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath]
-                                                            options:kNilOptions
-                                                              error:&err];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *fondoString = [defaults objectForKey:@"fondoChico"];
     
-    /*
-    _products = nil;
-    [[AseguradorIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
-        if (success) {
-            _products = products;
-            //SKProduct * product = (SKProduct *) _products[0];
-            //NSLog(@"IAP:  %@", product.localizedTitle);
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if([deviceType isEqualToString:@"iPhone"] || [deviceType isEqualToString:@"iPod touch"]) {
+        if (fondoString == nil){
+            fondoCelda1.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda2.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda3.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda4.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda5.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda6.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda7.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda8.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda9.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda10.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda11.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
+            fondoCelda12.image = [UIImage imageNamed:@"Common-Wood-Back.png"];
         }
-
-    }];*/
-    
-    /*
-    //Efecto de pull to reload
-    self.refreshControl = [[UIRefreshControl alloc] init];
-    [self.refreshControl addTarget:self action:@selector(reload) forControlEvents:UIControlEventValueChanged];
-    [self reload];
-    [self.refreshControl beginRefreshing];
-    
-     
-     //Cambiar los tier por precios localizados
-    _priceFormatter = [[NSNumberFormatter alloc] init];
-    [_priceFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
-    [_priceFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-
-    */
-}
-
-- (void)reload {
-    _products = nil;
-    [self.tableView reloadData];
-    [[AseguradorIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
-        if (success) {
-            _products = products;
-            [self.tableView reloadData];
-            NSLog(@"RELOAD");
+        else
+            fondoCelda1.image = [UIImage imageNamed:fondoString];
+            fondoCelda2.image = [UIImage imageNamed:fondoString];
+            fondoCelda3.image = [UIImage imageNamed:fondoString];
+            fondoCelda4.image = [UIImage imageNamed:fondoString];
+            fondoCelda5.image = [UIImage imageNamed:fondoString];
+            fondoCelda6.image = [UIImage imageNamed:fondoString];
+            fondoCelda7.image = [UIImage imageNamed:fondoString];
+            fondoCelda8.image = [UIImage imageNamed:fondoString];
+            fondoCelda9.image = [UIImage imageNamed:fondoString];
+            fondoCelda10.image = [UIImage imageNamed:fondoString];
+            fondoCelda11.image = [UIImage imageNamed:fondoString];
+            fondoCelda12.image = [UIImage imageNamed:fondoString];
+    }
+    else {
+        if (fondoString == nil){
+            fondoCelda1.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda2.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda3.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda4.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda5.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda6.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda7.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda8.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda9.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda10.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda11.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            fondoCelda12.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            
         }
-        [self.refreshControl endRefreshing];
-    }];
+        else{
+            if ([fondoString isEqualToString:@"Common-Wood-Back.png"]){
+                fondoCelda1.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda2.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda3.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda4.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda5.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda6.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda7.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda8.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda9.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda10.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda11.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+                fondoCelda12.image = [UIImage imageNamed:@"iPad-Common-Back-Wood.png"];
+            }
+            if ([fondoString isEqualToString:@"Common-Cloth-Back.png"]){
+                fondoCelda1.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda2.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda3.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda4.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda5.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda6.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda7.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda8.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda9.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda10.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda11.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+                fondoCelda12.image = [UIImage imageNamed:@"iPad-Common-Back-Cloth.png"];
+            }
+            if ([fondoString isEqualToString:@"Common-White-Back.png"]){
+                fondoCelda1.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda2.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda3.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda4.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda5.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda6.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda7.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda8.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda9.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda10.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda11.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+                fondoCelda12.image = [UIImage imageNamed:@"iPad-Common-Back-White.png"];
+            }
+        }
+        
+        
+        
+        
+        
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013marzoq1"]){
+        marzoCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013marzoq2"]){
+        marzoCompradoRight.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013abrilq1"]){
+        abrilCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013abrilq2"]){
+        abrilCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013marzocombo"]){
+        marzoCompradoRight.hidden = FALSE;
+        marzoCompradoLeft.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013abrilcombo"]){
+        abrilCompradoLeft.hidden = FALSE;
+        abrilCompradoRight.hidden = FALSE;
+        
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013mayoq1"]){
+        mayoCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013mayoq2"]){
+        mayoCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013mayocombo"]){
+        mayoCompradoRight.hidden = FALSE;
+        mayoCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013junioq1"]){
+        junioCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013junioq2"]){
+        junioCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013juniocombo"]){
+        junioCompradoRight.hidden = FALSE;
+        junioCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013julioq1"]){
+        julioCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013julioq2"]){
+        julioCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013juliocombo"]){
+        julioCompradoRight.hidden = FALSE;
+        julioCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013agostoq1"]){
+        agostoCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013agostoQ2"]){
+        agostoCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013agostocombo"]){
+        agostoCompradoRight.hidden = FALSE;
+        agostoCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013septiembreq1"]){
+        septiembreCompradoLeft.hidden = FALSE;
+    }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"in.haikustudio.elaseguradorns.2013septiembreq2"]){
+        septiembreCompradoRight.hidden = FALSE;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"iin.haikustudio.elaseguradorns.2013septiembrecombo"]){
+        septiembreCompradoRight.hidden = FALSE;
+        septiembreCompradoLeft.hidden = FALSE;
+    }
+    
+    
+    
+    
 }
 
 
 - (void)viewWillAppear:(BOOL)animated {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+    [super viewWillAppear:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)productPurchased:(NSNotification *)notification {
-    
-    NSString * productIdentifier = notification.object;
-    [_products enumerateObjectsUsingBlock:^(SKProduct * product, NSUInteger idx, BOOL *stop) {
-        if ([product.productIdentifier isEqualToString:productIdentifier]) {
-            //[self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:idx inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
-            *stop = YES;
-        }
-    }];
-    
-}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -105,85 +225,91 @@
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if([deviceType isEqualToString:@"iPhone"] || [deviceType isEqualToString:@"iPod touch"]) {
+        return 168;
+    }
+    else {
+        return 240;
+    }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return arrayIssues.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Set up the cell...
-    
-    oneIssue = arrayIssues[indexPath.row];
-    
-    UILabel *cellText = (UILabel *)[cell viewWithTag:2002];
-	cellText.text = [oneIssue objectForKey:@"titulo"];
-	    
-    //UIImageView * cellImage = (UIImageView *)[cell viewWithTag:2001];
-    //cellImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", [oneIssue objectForKey:@"portada"]]];
-    
-    return cell;
-}
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSNumber numberWithInt:indexPath.row] forKey:@"rowClicked"];
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if (indexPath.row == 0 ){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 1){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 2){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 3){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 4){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 5){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 6){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 7){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 8){
+        [self performSegueWithIdentifier: @"seguePreview" sender: self];
+    }
+    
+    if (indexPath.row == 9){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://bit.ly/AMSFiPhone"]];
+    }
+    
+    if (indexPath.row == 10){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.audatex.com.mx"]];
+    }
+    
+    if (indexPath.row == 11)
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://lojack.com.mx"]];
+
     /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if (indexPath.row == 10)
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://elasegurador.mx"]];
+    
+    if (indexPath.row == 11){
+        
+        if([deviceType isEqualToString:@"iPhone"]){
+            NSString *phoneNumber = @"tel://54407831";
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+        }
+        
+        else
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://elasegurador.mx"]];
+    }*/
 }
 
 @end

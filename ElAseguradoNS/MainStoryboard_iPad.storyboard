@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="E4c-cF-XLE">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller - Última Ed. SEP, 2013-->
+        <scene sceneID="fP8-Ag-hbu">
+            <objects>
+                <viewController id="PPo-p4-fuN" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38F-Et-Nw2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mc6-Gz-PPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Za-7N-PyU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="sek-Wd-cJJ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1112"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Welcome-Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-gF-iWC">
+                                <rect key="frame" x="129" y="0.0" width="512" height="383"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-Ki-ItX">
+                                <rect key="frame" x="221" y="227" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Welcome-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Welcome-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cCB-oE-e29" kind="push" id="J8u-55-2Ic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnf-hj-JaV">
+                                <rect key="frame" x="389" y="227" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Welcome-Menu-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Welcome-Menu-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6hT-Vn-BUb" kind="push" id="h1S-Oh-i0s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-NewNews.png" translatesAutoresizingMaskIntoConstraints="NO" id="sxT-Xo-SgM">
+                                <rect key="frame" x="0.0" y="274" width="768" height="750"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCs-TV-1jn">
+                                <rect key="frame" x="29" y="300" width="712" height="704"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Última Ed. SEP, 2013" id="8sP-NC-v9Q"/>
+                    <connections>
+                        <outlet property="webView" destination="VCs-TV-1jn" id="rfE-j4-got"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-s2-I57" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="121"/>
+        </scene>
+        <!--Enlace View Controller - Enlace-->
+        <scene sceneID="x6q-8Y-qQz">
+            <objects>
+                <viewController id="TeN-Ra-S8l" customClass="EnlaceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yo9-aN-6S3"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNy-U9-2Nw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rKu-Ss-39j">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="nTN-6e-bc8">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1161"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIj-RT-NPL">
+                                <rect key="frame" x="129" y="204" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-Web-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Enlace-Web-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLWeb" destination="TeN-Ra-S8l" eventType="touchUpInside" id="2WK-6w-gRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeZ-WF-Rlr">
+                                <rect key="frame" x="129" y="264" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-Mail-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-MenuEnlace-Mail-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMail" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Mce-SA-2rh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVS-n5-AKq">
+                                <rect key="frame" x="129" y="324" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-Twitter-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Enlace-Twitter-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLTwitter" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Nwk-eV-Dgn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swg-Zf-yJc">
+                                <rect key="frame" x="129" y="384" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-Face-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Enlace-Face-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLFB" destination="TeN-Ra-S8l" eventType="touchUpInside" id="obK-qV-W5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veQ-Be-IBK">
+                                <rect key="frame" x="129" y="444" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-Tel-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Enlace-Tel-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCall" destination="TeN-Ra-S8l" eventType="touchUpInside" id="Qzd-Ci-hNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLR-EY-wFM">
+                                <rect key="frame" x="257" y="587" width="255" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Enlace-AMSF-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Enlace-AMSF-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OpenAMSF" destination="TeN-Ra-S8l" eventType="touchUpInside" id="7F5-XR-noK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Enlace-Text.png" translatesAutoresizingMaskIntoConstraints="NO" id="G2v-Ch-HFg">
+                                <rect key="frame" x="214" y="60" width="340" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Enlace-Text-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cAW-KW-eNL">
+                                <rect key="frame" x="214" y="504" width="340" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Enlace" image="iPhone-BottomBar-2(S).png" id="euU-rr-2Dx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXd-7q-uyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232" y="-1212"/>
+        </scene>
+        <!--Desarrollo View Controller - Desarrollo-->
+        <scene sceneID="aNw-we-ufG">
+            <objects>
+                <viewController id="0f7-A7-WPB" customClass="DesarrolloViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NZF-sH-JQu"/>
+                        <viewControllerLayoutGuide type="bottom" id="krn-aI-i9b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xlq-9W-p2M">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-Uz-jZj">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1161"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Dev-Text.png" translatesAutoresizingMaskIntoConstraints="NO" id="V4g-dL-KI2">
+                                <rect key="frame" x="214" y="40" width="340" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Dev-Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="f3P-2d-glO">
+                                <rect key="frame" x="224" y="482" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLN-at-UOQ">
+                                <rect key="frame" x="129" y="213" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Dev-Web-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Dev-Web-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="URLWeb" destination="0f7-A7-WPB" eventType="touchUpInside" id="MIg-VN-b4H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZT-fG-Uos">
+                                <rect key="frame" x="129" y="273" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Dev-Bug-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Dev-Bug-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMailBug" destination="0f7-A7-WPB" eventType="touchUpInside" id="MA1-oM-kTZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifa-7m-xcQ">
+                                <rect key="frame" x="129" y="333" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Dev-Contact-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Dev-Contact-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMailContacto" destination="0f7-A7-WPB" eventType="touchUpInside" id="Xki-rb-KpG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzC-HY-joW">
+                                <rect key="frame" x="129" y="393" width="510" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Dev-Tel-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Dev-Tel-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCall" destination="0f7-A7-WPB" eventType="touchUpInside" id="fzG-IH-aYW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Desarrollo" image="iPhone-BottomBar-3(S).png" id="9mG-dA-Dyj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gn6-gj-aj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3161" y="-1212"/>
+        </scene>
+        <!--Settings View Controller - Información-->
+        <scene sceneID="6Dw-hH-oFo">
+            <objects>
+                <viewController id="GSA-0e-HPf" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zYf-p6-1zJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3VJ-at-Itf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cDa-T9-CK3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="on1-MC-2xa">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1161"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Info-Text.png" translatesAutoresizingMaskIntoConstraints="NO" id="f0b-1Y-ZNt">
+                                <rect key="frame" x="174" y="39" width="420" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Info-Tut-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="b83-dJ-bHE">
+                                <rect key="frame" x="129" y="108" width="510" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Tut-01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tjq-AH-zSP">
+                                <rect key="frame" x="179" y="131" width="410" height="517"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Menu-Info-Skin-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-oj-kEP">
+                                <rect key="frame" x="174" y="755" width="420" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-cD-q5j">
+                                <rect key="frame" x="174" y="695" width="420" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Info-Restore-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Info-Restore-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreTapped" destination="GSA-0e-HPf" eventType="touchUpInside" id="1Ts-0Z-bux"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-EX-cQk">
+                                <rect key="frame" x="397" y="771" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="iPad-Menu-Info-Skins-1-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="iPad-Menu-Info-Skins-1-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo1" destination="GSA-0e-HPf" eventType="touchUpInside" id="8FL-qB-bLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUs-lo-Jfu">
+                                <rect key="frame" x="443" y="771" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Info-Skins-2-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Info-Skins-2-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo2" destination="GSA-0e-HPf" eventType="touchUpInside" id="M2Y-I9-h55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFh-RX-AY2">
+                                <rect key="frame" x="490" y="771" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Info-Skins-3-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Info-Skins-3-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFondo3" destination="GSA-0e-HPf" eventType="touchUpInside" id="kwZ-Ik-gq1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anx-Wo-Sgt">
+                                <rect key="frame" x="143" y="350" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Info-Tut-Arrow-Left-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Info-Tut-Arrow-Left-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutIzquierdo" destination="GSA-0e-HPf" eventType="touchUpInside" id="RnN-Vy-QXe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZS-ns-yzl">
+                                <rect key="frame" x="595" y="350" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Menu-Info-Tut-Arrow-Right-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Menu-Info-Tut-Arrow-Right-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutDerecho" destination="GSA-0e-HPf" eventType="touchUpInside" id="wOW-uv-xjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Información" image="iPhone-BottomBar-1(S).png" id="6ce-ZC-nsV"/>
+                    <connections>
+                        <outlet property="tut" destination="tjq-AH-zSP" id="6W6-rS-uFn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUM-nh-mOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="-1212"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WtM-Ut-SJD">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="6hT-Vn-BUb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OMt-rf-AgR"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Big-7g-waU">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GSA-0e-HPf" kind="relationship" relationship="viewControllers" id="Kmj-Bo-7L3"/>
+                        <segue destination="TeN-Ra-S8l" kind="relationship" relationship="viewControllers" id="YKe-kK-HE6"/>
+                        <segue destination="0f7-A7-WPB" kind="relationship" relationship="viewControllers" id="vxf-7k-Xjs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyF-kX-K5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="-1212"/>
+        </scene>
+        <!--AseguradorNS View Controller - Hemeroteca-->
+        <scene sceneID="tiH-nx-Tu2">
+            <objects>
+                <tableViewController id="cCB-oE-e29" customClass="AseguradorNSViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="3001" contentMode="top" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vtZ-o3-Abr">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection id="c1Z-1C-ORA">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="240" id="8Ra-4q-ehg" userLabel="Enero">
+                                        <rect key="frame" x="0.0" y="64" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ra-4q-ehg" id="U6X-E3-KPW">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ6-c4-Vml" userLabel="button para segue">
+                                                    <rect key="frame" x="206" y="43" width="73" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="Kiv-Ll-aWR" kind="push" identifier="seguePreview" id="0Qu-N5-C1j"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" tag="10001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-uP-lKF" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-ENE13.png" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-nU-lQe" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-qd-d0F" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJj-n9-Qlt" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="1q2-0e-lxe" userLabel="Febrero">
+                                        <rect key="frame" x="0.0" y="304" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1q2-0e-lxe" id="jjA-gQ-6f1">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lbn-sN-hM0" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-FEB13.png" translatesAutoresizingMaskIntoConstraints="NO" id="tLw-Sa-Nwm" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="EfP-oJ-vUC" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-Nf-4Ey" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="b2o-pp-FUw" userLabel="Marzo">
+                                        <rect key="frame" x="0.0" y="544" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b2o-pp-FUw" id="6zC-i8-zqs">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="RHT-ih-KWl" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-MAR13.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNI-4f-wbg" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-Ru-AfT" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="GPd-nz-aBq" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="2df-aG-SU8" userLabel="Abril">
+                                        <rect key="frame" x="0.0" y="784" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2df-aG-SU8" id="qld-a5-Edy">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="rur-lg-wJQ" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-ABR13.png" translatesAutoresizingMaskIntoConstraints="NO" id="gDz-sg-qNK" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-Xe-h5s" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZUy-PH-fdx" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="cES-VY-txY" userLabel="Mayo">
+                                        <rect key="frame" x="0.0" y="1024" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cES-VY-txY" id="fL4-fM-K6S">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ij-J2-q9H" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-MAY13.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTp-h7-U8W" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="75C-87-L4W" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1K-yO-bZ6" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="8Hm-x7-Mte" userLabel="Junio">
+                                        <rect key="frame" x="0.0" y="1264" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Hm-x7-Mte" id="OxA-3Z-x3n">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-gf-i46" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-JUN13.png" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-Cp-oHW" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="oFV-ja-Srp" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="vws-bn-2D7" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="RAr-Ny-PWk" userLabel="Julio">
+                                        <rect key="frame" x="0.0" y="1504" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RAr-Ny-PWk" id="yw6-fn-rvT">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hof-6v-YpU" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-JUL13.png" translatesAutoresizingMaskIntoConstraints="NO" id="3mK-oQ-kBa" userLabel="Revista">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7i-O1-qeJ" userLabel="Comprado left">
+                                                    <rect key="frame" x="567" y="45" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-gi-JLp" userLabel="Comprado right">
+                                                    <rect key="frame" x="567" y="95" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="yZc-Ew-FGU" userLabel="Agosto">
+                                        <rect key="frame" x="0.0" y="1744" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yZc-Ew-FGU" id="8CO-gH-ueq">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="fvU-WK-dnO" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-AGO13.png" translatesAutoresizingMaskIntoConstraints="NO" id="57q-Vy-hfq" userLabel="Revista">
+                                                    <rect key="frame" x="20" y="20" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="yZu-PJ-K8F" userLabel="Comprado left">
+                                                    <rect key="frame" x="587" y="65" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="bbR-ng-3UH" userLabel="Comprado right">
+                                                    <rect key="frame" x="587" y="115" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="vcP-3q-HZB" userLabel="Septiembre">
+                                        <rect key="frame" x="0.0" y="1984" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcP-3q-HZB" id="HVR-9a-kZi">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="vz9-zD-L8x" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-SEP12.png" translatesAutoresizingMaskIntoConstraints="NO" id="iku-Hh-Jfn" userLabel="Revista">
+                                                    <rect key="frame" x="10" y="10" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="iJe-OA-k52" userLabel="Comprado left">
+                                                    <rect key="frame" x="575" y="53" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Shelf-TickOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="zez-FD-VuT" userLabel="Comprado left">
+                                                    <rect key="frame" x="575" y="108" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="tHl-rh-b3T" userLabel="Octubre">
+                                        <rect key="frame" x="0.0" y="2224" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tHl-rh-b3T" id="5z3-fW-ChQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="tw7-qd-Yun" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-Ad-AMSF.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jp-iG-iOY" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="20" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="rBC-QJ-3G1" userLabel="Noviembre">
+                                        <rect key="frame" x="0.0" y="2464" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBC-QJ-3G1" id="ipn-LH-IP7">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="ahn-Oc-RZc" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Diy-2Y-WN1" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-Ad-Audatex.png" translatesAutoresizingMaskIntoConstraints="NO" id="P30-Qw-9dD" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="9" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="240" id="EYu-Yx-By1" userLabel="Diciembre">
+                                        <rect key="frame" x="0.0" y="2704" width="768" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EYu-Yx-By1" id="1Lk-RV-SCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Back-Cloth.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7s-4q-Dld" userLabel="Fondo Celda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-I0-kx6" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2003" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Shelf-Ad-LoJack.png" translatesAutoresizingMaskIntoConstraints="NO" id="bja-lN-sS9" userLabel="Fondo Anuncio">
+                                                    <rect key="frame" x="0.0" y="10" width="768" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="cCB-oE-e29" id="Vxx-sp-w4P"/>
+                            <outlet property="delegate" destination="cCB-oE-e29" id="tuR-Ne-W2Q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hemeroteca" id="ObF-ij-qys"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="abrilCompradoLeft" destination="bbK-Xe-h5s" id="fpP-nt-ybi"/>
+                        <outlet property="abrilCompradoRight" destination="ZUy-PH-fdx" id="FNN-KN-wSF"/>
+                        <outlet property="fondoCelda1" destination="oHD-uP-lKF" id="ytE-4h-n6b"/>
+                        <outlet property="fondoCelda10" destination="tw7-qd-Yun" id="7Kh-oA-Z1a"/>
+                        <outlet property="fondoCelda11" destination="ahn-Oc-RZc" id="qNV-gH-SW2"/>
+                        <outlet property="fondoCelda12" destination="Z7s-4q-Dld" id="KiX-h6-AMX"/>
+                        <outlet property="fondoCelda2" destination="Lbn-sN-hM0" id="Ntg-UD-Hfi"/>
+                        <outlet property="fondoCelda3" destination="RHT-ih-KWl" id="RBD-Me-jTG"/>
+                        <outlet property="fondoCelda4" destination="rur-lg-wJQ" id="Tg6-gs-ccw"/>
+                        <outlet property="fondoCelda5" destination="1ij-J2-q9H" id="bhm-iY-lgh"/>
+                        <outlet property="fondoCelda6" destination="Anq-gf-i46" id="bjV-n8-u42"/>
+                        <outlet property="fondoCelda7" destination="Hof-6v-YpU" id="Ncd-xv-NCH"/>
+                        <outlet property="fondoCelda8" destination="fvU-WK-dnO" id="6MG-Qv-fZ1"/>
+                        <outlet property="fondoCelda9" destination="vz9-zD-L8x" id="7TX-P5-U2v"/>
+                        <outlet property="marzoCompradoLeft" destination="Ce0-Ru-AfT" id="DU5-vi-eDx"/>
+                        <outlet property="marzoCompradoRight" destination="GPd-nz-aBq" id="8Jo-Qv-aMT"/>
+                        <outlet property="mayoCompradoLeft" destination="75C-87-L4W" id="9rC-8i-GyL"/>
+                        <outlet property="mayoCompradoRight" destination="H1K-yO-bZ6" id="A5l-9B-pad"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rt7-Ae-XvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="121"/>
+        </scene>
+        <!--Detalle Quincenal View Controller - SEP, Qna. 1-->
+        <scene sceneID="nze-Z2-fr1">
+            <objects>
+                <viewController id="Kiv-Ll-aWR" customClass="DetalleQuincenalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qmW-i3-6O6"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFw-uA-7IH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iiO-VZ-UAM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceq-vH-RIt" userLabel="Button Segue">
+                                <rect key="frame" x="0.0" y="66" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wZv-FO-Bwa" kind="push" identifier="segueDetalleNoticias" id="etM-xW-lcy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFn-8l-L21">
+                                <rect key="frame" x="0.0" y="-75" width="768" height="1287"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Preview-Paper-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="BNN-Wm-Q4b" userLabel="Fondo PaperBack">
+                                <rect key="frame" x="0.0" y="164" width="768" height="860"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Preview-Cover-ENE1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-eP-e1o" userLabel="ImageView - Banner">
+                                <rect key="frame" x="74" y="202" width="620" height="827"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4o-wg-3H0" userLabel="ingresar Q1">
+                                <rect key="frame" x="0.0" y="72" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueEntrarQ1" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="oyM-LE-dWa"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsv-3F-zDG" userLabel="Ingresar Q2">
+                                <rect key="frame" x="512" y="72" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q2-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q2-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueEntrarQ2" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="4Ut-cH-r5M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCM-D2-dYa" userLabel="Comprar Q1">
+                                <rect key="frame" x="0.0" y="72" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ1" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="zg0-Jy-XYP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxR-NT-Thi" userLabel="Comprar Q2">
+                                <rect key="frame" x="256" y="72" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ2" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="dcI-Ze-v8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unv-b7-Vgn" userLabel="Comprar Ambas">
+                                <rect key="frame" x="512" y="72" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1&amp;2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1&amp;2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonCombo" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="6ni-lr-eCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-uE-lj0" userLabel="Destacadas">
+                                <rect key="frame" x="237" y="924" width="294" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Destacadas-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Destacadas-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RxS-h6-gqM" kind="push" id="aYv-8T-jZ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANM-Gh-sE5" userLabel="Anuncio Izquierda">
+                                <rect key="frame" x="58" y="202" width="350" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="anuncioIzq" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="Ko2-OM-bS0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dww-QZ-ogL" userLabel="Anuncio Derecha">
+                                <rect key="frame" x="389" y="202" width="350" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="anuncioDer" destination="Kiv-Ll-aWR" eventType="touchUpInside" id="FeV-ie-zrA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SEP, Qna. 1" id="QSe-WU-Ogs">
+                        <barButtonItem key="rightBarButtonItem" title="↔ Quincena" id="poH-aQ-k9x">
+                            <connections>
+                                <action selector="changeCuarto" destination="Kiv-Ll-aWR" id="Bn4-ky-NAn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comprarAmbas" destination="unv-b7-Vgn" id="agG-03-Yhl"/>
+                        <outlet property="comprarQ1" destination="bCM-D2-dYa" id="3Y5-Le-CHS"/>
+                        <outlet property="comprarQ2" destination="dxR-NT-Thi" id="knn-ME-lt3"/>
+                        <outlet property="entrarQ1" destination="J4o-wg-3H0" id="ZSI-DF-XRa"/>
+                        <outlet property="entrarQ2" destination="Hsv-3F-zDG" id="Bc4-Ph-gLw"/>
+                        <outlet property="preface" destination="rtX-eP-e1o" id="QkE-pB-pGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlT-oT-LZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="63"/>
+        </scene>
+        <!--Destacados View Controller - Destacadas-->
+        <scene sceneID="nde-Mi-ih8">
+            <objects>
+                <viewController id="RxS-h6-gqM" customClass="DestacadosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zia-rN-AdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="oAz-Gf-Vmj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJy-H2-5XI">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="bWP-rh-KaW">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1112"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Preview-Paper-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pll-vk-K9p" userLabel="ImageView - Banner">
+                                <rect key="frame" x="0.0" y="164" width="768" height="860"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-ns-gbg">
+                                <rect key="frame" x="59" y="179" width="639" height="830"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lista de noticias destacadas, sólo texto
+                                    
+                                    
+                                    Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0d-lj-gAx" userLabel="Button Segue">
+                                <rect key="frame" x="73" y="190" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wZv-FO-Bwa" kind="push" identifier="segueDestacadasNoticias" id="TIu-EY-3RK"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8M-JZ-KKF" userLabel="Ingresa Q1">
+                                <rect key="frame" x="0.0" y="71" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueEntrarQ1" destination="RxS-h6-gqM" eventType="touchUpInside" id="oMU-I8-Mko"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu2-Lp-t87" userLabel="Ingresa Q2">
+                                <rect key="frame" x="512" y="71" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q2-Entrar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q2-Entrar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueEntrarQ2" destination="RxS-h6-gqM" eventType="touchUpInside" id="ogU-3l-ywc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-wT-Zpw" userLabel="Compra Q1">
+                                <rect key="frame" x="0.0" y="71" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ1" destination="RxS-h6-gqM" eventType="touchUpInside" id="IJB-Sa-9f3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-gH-KUR" userLabel="Compra Q2">
+                                <rect key="frame" x="256" y="71" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonQ2" destination="RxS-h6-gqM" eventType="touchUpInside" id="iXb-PF-hSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-ap-zQb" userLabel="Compra Ambas">
+                                <rect key="frame" x="512" y="71" width="256" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="iPad-Preview-Q1&amp;2-Comprar-Idle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="iPad-Preview-Q1&amp;2-Comprar-State.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonCombo" destination="RxS-h6-gqM" eventType="touchUpInside" id="gag-5o-aaf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Destacadas" id="15I-dI-RmQ">
+                        <barButtonItem key="rightBarButtonItem" title="↔ Quincena" id="Yhl-lQ-vG8">
+                            <connections>
+                                <action selector="changeCuarto" destination="RxS-h6-gqM" id="lYa-1I-10o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comprarAmbas" destination="EIg-ap-zQb" id="dFI-kg-dsL"/>
+                        <outlet property="comprarQ1" destination="ZJY-wT-Zpw" id="vyE-Oj-QaH"/>
+                        <outlet property="comprarQ2" destination="Cek-gH-KUR" id="G1J-33-dlq"/>
+                        <outlet property="destacados" destination="1ag-ns-gbg" id="u0j-mT-1VY"/>
+                        <outlet property="entrarQ1" destination="q8M-JZ-KKF" id="4EI-mn-FwD"/>
+                        <outlet property="entrarQ2" destination="xu2-Lp-t87" id="RDr-si-znT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6be-BB-mrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3130" y="121"/>
+        </scene>
+        <!--Noticia Reader View Controller-->
+        <scene sceneID="T4c-KC-3hg">
+            <objects>
+                <viewController id="Nke-AR-qhq" customClass="NoticiaReaderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EnJ-P0-wrN"/>
+                        <viewControllerLayoutGuide type="bottom" id="7lb-FN-vqe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jey-Og-oms">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Common-Complete-Cloth-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-mi-zPH">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="iPad-Reader-Paper-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="MDn-CV-X3x">
+                                <rect key="frame" x="0.0" y="58" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8U-wO-1z8">
+                                <rect key="frame" x="21" y="97" width="727" height="890"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XKs-25-9ya"/>
+                    <connections>
+                        <outlet property="readerBody" destination="D8U-wO-1z8" id="NDg-Uh-sCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="II8-CB-GM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5049" y="97"/>
+        </scene>
+        <!--Seleccion View Controller - Noticias-->
+        <scene sceneID="sfk-Zz-2P6">
+            <objects>
+                <tableViewController id="wZv-FO-Bwa" customClass="SeleccionViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DJ8-Vu-R7D">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="DZZ-Af-MmT" style="IBUITableViewCellStyleDefault" id="ldY-Zu-jgF">
+                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldY-Zu-jgF" id="v5P-L4-s7a">
+                                    <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZZ-Af-MmT">
+                                            <rect key="frame" x="15" y="0.0" width="718" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wZv-FO-Bwa" id="LVa-iB-dHB"/>
+                            <outlet property="delegate" destination="wZv-FO-Bwa" id="Tjy-Mm-m6l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Noticias" id="RYq-DG-mrW">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" id="7TP-m0-63i">
+                            <connections>
+                                <segue destination="Nke-AR-qhq" kind="push" identifier="segueReader" id="En5-d5-w5Z"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Versión Editorial" id="9cg-a6-9GA">
+                            <connections>
+                                <action selector="botonPDF" destination="wZv-FO-Bwa" id="3Rc-e4-P6U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT7-E4-DbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4125" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lad-By-YHE">
+            <objects>
+                <navigationController id="E4c-cF-XLE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="BgG-r5-xYv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PPo-p4-fuN" kind="relationship" relationship="rootViewController" id="ctd-Md-2bf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkz-Gd-i70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shelf-TickOn.png" width="46" height="46"/>
+        <image name="Tut-01.jpg" width="820" height="1035"/>
+        <image name="iPad-Common-Back-Cloth.png" width="1536" height="480"/>
+        <image name="iPad-Common-Complete-Cloth-Back.png" width="1536" height="1920"/>
+        <image name="iPad-Menu-Dev-Bug-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Dev-Bug-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Dev-Contact-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Dev-Contact-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Dev-Logo.png" width="640" height="100"/>
+        <image name="iPad-Menu-Dev-Tel-Idle.png" width="1020" height="118"/>
+        <image name="iPad-Menu-Dev-Tel-State.png" width="1020" height="118"/>
+        <image name="iPad-Menu-Dev-Text.png" width="680" height="370"/>
+        <image name="iPad-Menu-Dev-Web-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Dev-Web-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-AMSF-Idle.png" width="510" height="220"/>
+        <image name="iPad-Menu-Enlace-AMSF-State.png" width="510" height="220"/>
+        <image name="iPad-Menu-Enlace-Face-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Face-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Mail-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Tel-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Tel-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Text-2.png" width="680" height="150"/>
+        <image name="iPad-Menu-Enlace-Text.png" width="680" height="320"/>
+        <image name="iPad-Menu-Enlace-Twitter-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Twitter-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Web-Idle.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Enlace-Web-State.png" width="1020" height="120"/>
+        <image name="iPad-Menu-Info-Restore-Idle.png" width="840" height="120"/>
+        <image name="iPad-Menu-Info-Restore-State.png" width="840" height="120"/>
+        <image name="iPad-Menu-Info-Skin-Back.png" width="840" height="120"/>
+        <image name="iPad-Menu-Info-Skins-1-Idle.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Skins-1-State.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Skins-2-Idle.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Skins-2-State.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Skins-3-Idle.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Skins-3-State.png" width="80" height="56"/>
+        <image name="iPad-Menu-Info-Text.png" width="840" height="170"/>
+        <image name="iPad-Menu-Info-Tut-Arrow-Left-Idle.png" width="60" height="80"/>
+        <image name="iPad-Menu-Info-Tut-Arrow-Left-State.png" width="16" height="16"/>
+        <image name="iPad-Menu-Info-Tut-Arrow-Right-Idle.png" width="60" height="80"/>
+        <image name="iPad-Menu-Info-Tut-Arrow-Right-State.png" width="60" height="80"/>
+        <image name="iPad-Menu-Info-Tut-Back.png" width="1020" height="1134"/>
+        <image name="iPad-MenuEnlace-Mail-State.png" width="16" height="16"/>
+        <image name="iPad-NewNews.png" width="1536" height="1500"/>
+        <image name="iPad-Preview-Cover-ENE1.jpg" width="1240" height="1655"/>
+        <image name="iPad-Preview-Destacadas-Idle.png" width="588" height="200"/>
+        <image name="iPad-Preview-Destacadas-State.png" width="588" height="200"/>
+        <image name="iPad-Preview-Paper-Back.png" width="1536" height="1720"/>
+        <image name="iPad-Preview-Q1&amp;2-Comprar-Idle.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q1&amp;2-Comprar-State.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q1-Comprar-Idle.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q1-Comprar-State.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q1-Entrar-Idle.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q1-Entrar-State.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q2-Comprar-Idle.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q2-Comprar-State.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q2-Entrar-Idle.png" width="512" height="200"/>
+        <image name="iPad-Preview-Q2-Entrar-State.png" width="512" height="200"/>
+        <image name="iPad-Reader-Paper-Back.png" width="1536" height="1920"/>
+        <image name="iPad-Shelf-ABR13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-AGO13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-Ad-AMSF.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-Ad-Audatex.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-Ad-LoJack.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-ENE13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-FEB13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-JUL13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-JUN13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-MAR13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-MAY13.png" width="1536" height="480"/>
+        <image name="iPad-Shelf-SEP12.png" width="1536" height="480"/>
+        <image name="iPad-Welcome-Entrar-Idle.png" width="320" height="110"/>
+        <image name="iPad-Welcome-Entrar-State.png" width="320" height="110"/>
+        <image name="iPad-Welcome-Menu-Idle.png" width="320" height="110"/>
+        <image name="iPad-Welcome-Menu-State.png" width="320" height="110"/>
+        <image name="iPad-Welcome-Title.png" width="1536" height="1150"/>
+        <image name="iPhone-BottomBar-1(S).png" width="30" height="30"/>
+        <image name="iPhone-BottomBar-2(S).png" width="30" height="30"/>
+        <image name="iPhone-BottomBar-3(S).png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="etM-xW-lcy"/>
+    </inferredMetricsTieBreakers>
+</document>
